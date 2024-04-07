@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web application development">
+    <meta name="keywords" content="PHP">
+    <meta name="author" content="Vu Minh Quang, Nguyen Dinh Tan Dang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Use font-family form Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Chart 2</title>
+</head>
+
+<body style="background-image: url('image/background.png');">
+    <header>
+        <div id="head_title" style="color: white;">
+            <h1> Data Visualisation - Australia Migration</h1>
+            <h2>Project Process Book</h2>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="table_of_content_chart1">
+            <h1 id="toc_title" style="color: white;">Contents</h1>
+
+            <table id="toc">
+                <tr id="row1">
+                    <th><a href="index1.html#first_chart">01</a></th>
+                    <th><a href="index2.html">02</a></th>
+                    <th><a href="index3.html">03</a></th>
+                    <th><a href="index4.html">04</a></th>
+                </tr>
+                <tr id="row2">
+                    <td>Migration in Australia</td>
+                    <td>Level of education for each migrant subject </td>
+                    <td>Migration in New South Wales state</td>
+                    <td>Effects of migration to the New South Wales state</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    </main>
+
+
+    <!-- Explains what the chart is for and how to use it -->
+    <div class="description_index2">
+        <h3>
+            Explore the patterns and trends of migration classified by educational attainment in Australia
+        </h3>
+    </div>
+    <p class="how-to-use_index2">How to use:
+        With this line chart, simply hovering over any of the three lines will display a text box containing the migrant
+        type and the educational attainment levels associated with that migrant type.</p>
+
+    <!------------------------------------------------------------ D3.js part ---------------------------------------------->
+    <div id="education-chart"></div>
+
+
+    <!-- Explain why the chart above is used with that data type -->
+    <div class="lineandcolumnchart_index2">
+        <h3> Explain</h3>
+        <p>
+            The reason I want users to see this table is to provide them with a clearer understanding of the three
+            migrant groups when they arrive in Australia. Particularly, it allows insight into the education and
+            educational attainment levels of migrants within these groups upon their arrival in Australia. Consequently,
+            users can grasp to some extent the reasons why migrants in these groups choose Australia as their
+            destination.
+        </p>
+    </div>
+
+    <!-- Include file containing D3.js code -->
+    <script src="javascript/chart2.js"></script>
+
+
+    <footer>
+        <hr>
+        <p>©2024 All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

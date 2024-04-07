@@ -1,0 +1,300 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-weight: 300;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/*================================ index.php ================================*/
+header {
+    width: 100vw;
+    height: max-content;
+}
+
+#head_title {
+    text-align: center;
+    font-size: 28px;
+    color: #4B3B33;
+}
+
+/*================================ MAIN ===================================*/
+#home_image img{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#index_title {
+    font-size: 24px;
+    width: 70%;
+    margin-left: 15%; margin-right: 15%;
+    color: #4B3B33;
+}
+
+#profile {
+    width: 65%;
+    display: inline-block;
+    margin-left: 18%; margin-right: 18%; 
+    color: #4B3B33;
+}
+#profile h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+}
+#nguyenDang {
+    float: left;
+    width: 40%;
+}
+#minhQuang {
+    float: right;
+    width: 40%;
+}
+.profile_box img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.profile_box p {
+    font-size: 22px;
+}
+
+#summary {
+    width: 70%; 
+    margin: 0 auto; 
+    color: #4B3B33;
+
+}
+#summary_title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+}
+#excu_summary {
+    font-size: 18px; 
+    line-height: 1.5;
+}
+#summary .explore {
+    width:55%;
+    margin: 0 auto;
+    color: white;
+    background-color: #695b54;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+}
+#summary a {
+    text-decoration: none;
+    color: #FDEEE7;
+    padding-left: 20%; padding-right: 20%;
+    padding-top: 2%; padding-bottom: 2%; 
+}
+
+
+#toc_title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+    color: #4B3B33;
+}
+#table_of_content #toc{
+    width: 60%;
+    margin-left: 20%; margin-right: 20%;
+    margin-bottom: 5%;
+}
+#table_of_content #toc #row1 th {
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #695b54;
+    color: white;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+#table_of_content #toc #row2 td {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    background-color: #695b54;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+#table_of_content #toc a{
+    width: 100px;   
+    text-decoration: none;
+    color: white;
+    padding: 10px 80px 10px 80px ;
+}
+
+/*==================================== Index2 ====================================*/
+.description {
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #695b54; 
+    text-align: center; 
+}
+
+.description h3 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white; 
+}
+
+.description p {
+    font-size: 16px; 
+    color: #666;
+}
+
+.description p.how-to-use {
+    color: red; 
+}
+.how-to-use {
+    padding-top: 2%;
+    width: 70%; 
+    margin: 0 auto; 
+    color: #4B3B33;
+    font-size: 18px; 
+    line-height: 1.5;
+    text-align: justify;
+}
+#table_of_content_chart1 #toc{
+    width: 60%;
+    margin-left: 20%; margin-right: 20%;
+    margin-bottom: 5%;
+}
+#table_of_content_chart1 #toc #row1 th {
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 300;
+    background-color: #FDEEE7;
+    color: #4B3B33;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+#table_of_content_chart1 #toc #row2 td {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    background-color: #FDEEE7;
+    color: #4B3B33;
+    border-radius: 10px;
+    text-align: center;
+}
+#table_of_content_chart1 #toc a{
+    width: 100px;   
+    text-decoration: none;
+    color: #4B3B33;
+    padding: 10px 80px 10px 80px ;
+}
+
+.description_index2 {
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #FDEEE7; 
+    color: #4B3B33;
+    text-align: center;
+}
+.how-to-use_index2 {
+    padding-top: 2%;
+    width: 70%; 
+    margin: 0 auto; 
+    color: #FDEEE7;
+    font-size: 18px; 
+    line-height: 1.5;
+    text-align: justify;
+}
+#description_index3 {
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #FDEEE7; 
+    color: #4B3B33;
+    text-align: center;
+}
+
+/*==================================== Footer ====================================*/
+footer p {
+    text-align: center;
+}
+/*==================================== Chart 1 ====================================*/
+svg {
+    display: block;
+    margin: auto;
+}
+
+/* blur other state */
+.faded {
+    opacity: 0.5;
+}
+/* the hover state */
+.highlighted {
+    fill: #808079; 
+    stroke: black; 
+    stroke-width: 2; 
+}
+
+/* State hover function */
+.bang-hover {
+    stroke-width: 4; 
+    stroke: black; 
+}
+
+.lineandcolumnchart {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(144, 111, 111);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+    margin-top: 20px; 
+}
+
+.lineandcolumnchart_index2, .lineandcolumnchart_index3 {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FDEEE7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-size: 16px;
+    color: #4B3B33;
+    line-height: 1.6;
+    margin-top: 20px; 
+}
+/*==================================== Chart 4 ====================================*/
+.highlight {
+    filter: brightness(150%);
+}
+.fade {
+    opacity: 0.7; 
+}
+

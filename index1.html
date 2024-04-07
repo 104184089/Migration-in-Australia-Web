@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web application development">
+    <meta name="keywords" content="PHP">
+    <meta name="author" content="Vu Minh Quang, Nguyen Dinh Tan Dang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Use font-family form Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    <!-- Link to d3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Home Page</title>
+
+
+    <!-- When press 01 in table of content of other pages, it will back to this page at section #first_chart -->
+    <script>
+        window.onload = function () {
+            if (window.location.hash === "#first_chart") {
+                // Direct to first chart
+                var element = document.getElementById("first_chart");
+                if (element) {
+                    element.scrollIntoView();
+                }
+            }
+        };
+    </script>
+</head>
+
+<body style="background-image: url('image/homebg.png');">
+    <header>
+        <div id="head_title">
+            <h1> Data Visualisation - Australia Migration</h1>
+            <h2>Project Process Book</h2>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+
+
+
+        <div id="home_image">
+            <img src="image/migration.jpeg" alt="homeimg">
+        </div>
+
+        <div id="index_title">
+            <p><strong>Topic Title:</strong> Migration in Australia</p>
+            <p><strong>Present for:</strong> Dr. Tung Hoang</p>
+            <p><strong>Present by:</strong> Nguyen Dinh Tan Dang and Vu Minh Quang</p>
+            <p>This website will give you additional information about migration trends in Australia, a nation that
+                boasts excellent natural resources and a vibrant social scene in addition to having a sensible
+                immigration laws.</p>
+        </div>
+        <hr>
+        <div id="profile">
+            <h3>Member profiles</h3>
+            <div class="profile_box" id="nguyenDang">
+                <p><strong>Student Name:</strong> Nguyen Dinh Tan Dang</p>
+                <p><strong>Student ID:</strong> 104183565</p>
+                <p><strong>Mail:</strong> dangndtswh00705@fpt.edu.vn</p>
+                <p><strong>Responsibility:</strong> Collect data and Visualisation</p>
+            </div>
+
+
+
+            <div class="profile_box" id="minhQuang">
+                <p><strong>Student Name:</strong> Vu Minh Quang</p>
+                <p><strong>Student ID:</strong> 104184089</p>
+                <p><strong>Mail:</strong> quangvmswh00705@fpt.edu.vn</p>
+                <p><strong>Responsibility:</strong> Managing each task the team needs to do and goals for each stage of
+                    the project</p>
+            </div>
+
+            <div class="profile_box" id="minhQuang">
+
+            </div>
+
+        </div>
+        <hr>
+
+        <div id="summary">
+            <p id="summary_title">Excutive Summary</p>
+            <p id="excu_summary">The main topic that our group will address in this project is migration, with thorough
+                research and
+                careful search for relevant data on the topic through a <strong>Table of Contents</strong> to show the
+                information and
+                prove the reason why our team chose the topic above.<br><br>
+                To provide readers with a more comprehensive understanding of migration, we have depicted this through
+                <strong> the Migration Data in Australia map</strong> below
+                When users hover over states, a box contains information such as state names and migrant groups as well
+                as the total number of migrants our team studied. Additionally, with dots containing the names of cities
+                in the state, our team has also developed a similar feature to display state information. Furthermore,
+                when the user clicks on the <strong>dots</strong>, a line graph for each city appears, illustrating the
+                number of
+                migrants for each group as mentioned above. Along with the appearance of the chart is the appearance of
+                a bar chart providing information about the migration age milestones of each group of migrants, showing
+                which age groups and types of migrants tend to migrate to Australia the most. To further prove our
+                chosen point, our team conducted an analysis of one state, <strong>New
+                    South
+                    Wales</strong>, which has the highest number of migrants. Presented before the user is a detailed
+                map of the state's territory, with dots representing several major cities, and hovering over them
+                displays the city names. And right below is a stacked column chart of 3 object names for 2 areas
+                considered the most developed in the state. Information and data will be displayed when the user hovers
+                over the column.<br><br>
+                In summary, regarding our website, we aim for users to have a fresh and comprehensive understanding of
+                the migration topic, using Australia as an example. Our group has also provided various datasets to
+                somewhat convey to users the general topic and the specific issue of migration to Australia.
+            </p>
+            <p class="explore"><a href="#first_chart" id="explore">-> Let's explore Migration trends in Australia...</a>
+            </p>
+        </div>
+        <hr>
+
+        <div id="table_of_content">
+            <h1 id="toc_title">Contents</h1>
+
+            <table id="toc">
+                <tr id="row1">
+                    <th><a href="#summary">01</a></th>
+                    <th><a href="index2.html">02</a></th>
+                    <th><a href="index3.html">03</a></th>
+                    <th><a href="index4.html">04</a></th>
+                </tr>
+                <tr id="row2">
+                    <td>Introduction<br> & Excutive Summary</td>
+                    <td>Level of education for each migrant subject</td>
+                    <td>Migration in New South Wales state</td>
+                    <td>Effects of migration to the New South Wales state</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+
+
+        <!-- Explains what the chart is for and how to use it -->
+        <section id="first_chart">
+            <div class="description">
+                <h3>Explore the patterns and trends of the total number of migrants
+                    in Australia by 3 categories: Skilled, Family and Humanitarian</h3>
+            </div>
+
+
+            <p class="how-to-use"><strong>How to use:</strong><br>
+                You can hover over each state on <strong>the Australia map</strong> to see information, including
+                <strong>state name</strong>,
+                <strong>subjects</strong> and <strong>total number</strong> of migrants. When you hover over the dots
+                containing the city names, you will
+                see information similar to the displayed status. Furthermore, when you click on the dot, the line graph
+                the displayed data will appear immediately below the map corresponding to the city you click on. And
+                with a column chart directly below the map, hovering over the column will display a help text box
+                the user also receives the chart's information.
+            </p>
+
+
+            <!------------------------------------------------------------ D3.js part ---------------------------------------------->
+            <div id="chart-container"></div>
+
+
+
+            <!-- Explain why the chart above is used with that data type -->
+            <div class="lineandcolumnchart">
+                <h3> Explain</h3>
+                <p>
+                    Our team has developed a map of Australia depicting its states and within each state we have
+                    outstanding development area. This is intended to make users aware of the differences between states
+                    based on migration flows, thereby providing users with additional insights into why some
+                    states attract more migrants in the three designated groups.
+                    Putting age demographics into this context doesn't just illustrate the downward trend
+                    migrate to Australia at any age, as mentioned earlier, but also to provide readers with a
+                    more diverse perspectives on information related to migrants from other countries to Australia.
+                </p>
+            </div>
+            <div id="line-chart"></div>
+
+            <!-- Include file containing D3.js code -->
+            <script src="javascript/chart1.js"></script>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>©2024 All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

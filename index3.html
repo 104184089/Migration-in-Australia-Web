@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web application development">
+    <meta name="keywords" content="PHP">
+    <meta name="author" content="Vu Minh Quang, Nguyen Dinh Tan Dang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Use font-family form Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Chart 3</title>
+</head>
+
+<body style="background-image: url('image/backgroundchart3.jpg');">
+    <header>
+        <div id="head_title" style="color: white;">
+            <h1> Data Visualisation - Australia Migration</h1>
+            <h2>Project Process Book</h2>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="table_of_content_chart1">
+            <h1 id="toc_title" style="color: white;">Contents</h1>
+
+            <table id="toc">
+                <tr id="row1">
+                    <th><a href="index1.html#first_chart">01</a></th>
+                    <th><a href="index2.html">02</a></th>
+                    <th><a href="index3.html">03</a></th>
+                    <th><a href="index4.html">04</a></th>
+                </tr>
+                <tr id="row2">
+                    <td>Migration in Australia</td>
+                    <td>Level of education for each migrant subject</td>
+                    <td>Migration in New South Wales state</td>
+                    <td>Effects of migration to the New South Wales state</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    </main>
+
+
+    <!-- Explains what the chart is for and how to use it -->
+    <div id="description_index3">
+        <h3>Explore patterns and trends in total migration
+            from a specific state in Australia according to 3 categories: Skilled, Family and Humanitarian,
+            is the New South Wales state </h3>
+    </div>
+    <p class="how-to-use">How to use: You can hover over the dots in the state chart below
+        and a box will appear containing text with the names of major cities in the state of New South Wales.
+        In the line chart below, you can hover over the line, and it will display data for the 3 groups of people in
+        the 2 areas above.</p>
+
+    <!------------------------------------------------------------ D3.js part ---------------------------------------------->
+    <!-- Div for the map -->
+    <div class="map-container"></div>
+
+
+
+    <!-- Explain why the chart above is used with that data type -->
+    <div class="lineandcolumnchart_index3">
+        <h3> Explain</h3>
+        <p>
+            In showcasing the migration numbers for the three target groups across the states of Australia, our team has
+            identified New South Wales as having the highest volume. Therefore, on this page, we have chosen to display
+            New South Wales prominently to help users better understand this fact. Within the Greater Sydney region,
+            notable cities include Sydney, Parramatta, and Central Coast. Transitioning to the rest of New South Wales,
+            cities such as Newcastle, Wollongong, Tweed Heads, Maitland, Wagga Wagga, Albury, Coffs Harbour, Tamworth
+            stand out. These cities are represented by red dots, symbolizing major urban centers within the state, with
+            hover-over functionality to display city names. Furthermore, a line chart is provided to clearly illustrate
+            the disparity in migration numbers between the two regions in a concise and coherent manner."
+        </p>
+    </div>
+
+
+
+    <!-- Div for the chart -->
+    <div id="column-chart-container"></div>
+
+    <!-- Include file containing D3.js code -->
+    <script src="javascript/chart3.js"></script>
+
+
+    <footer>
+        <hr>
+        <p>©2024 All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
